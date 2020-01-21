@@ -1,16 +1,19 @@
 # bookface
 
-A new Flutter project.
+## Setting up the project
+1. Go to [the project repo](https://github.com/CheshtaK/bookface) and fork it by clicking "Fork" 
+2. If you are working on Windows, download [Git Bash for Windows](https://git-for-windows.github.io/) to get a full Unix bash with Git functionality
+3. Clone the repo to your desktop `git clone https://github.com/YOUR_USERNAME/bookface.git`
+4. Open the project
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Issues
 
-A few resources to get you started if this is your first Flutter project:
+Please file specific issues, bugs, or feature requests in our [issue tracker](https://github.com/CheshtaK/bookface/issues).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Contributing
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you wish to contribute a change to any of the existing plugins in this repo, please review our [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md), and send a [pull request](https://github.com/CheshtaK/bookface/pulls).
+
+
+
