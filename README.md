@@ -1,7 +1,13 @@
-# bookface
+<h1> <img src="https://github.com/CheshtaK/bookface/blob/master/screenshots/logo.png"
+  width="45"
+  height="45"
+  style="float:left;">
+  &nbsp;bookface
 
-Do You, uh, Book?
+_Do You, uh, Book?_
 
+
+### App Screens
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/3.jpeg) &nbsp;&nbsp;
@@ -22,6 +28,5 @@ issue template provided while creating a new issue.
 ## Contributing
 
 If you wish to contribute a change to any of the existing plugins in this repo, please review our [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md), and send a [pull request](https://github.com/CheshtaK/bookface/pulls).
-
 
 
