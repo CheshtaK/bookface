@@ -3,6 +3,7 @@
   height="45"
   style="float:left;">
   &nbsp;bookface
+</h1>
 
 _Do You, uh, Book?_
 
