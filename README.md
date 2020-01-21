@@ -1,5 +1,7 @@
 # bookface
 
+Do You, uh, Book?
+
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/3.jpeg) &nbsp;&nbsp;
@@ -14,7 +16,8 @@
 
 ## Issues
 
-Please file specific issues, bugs, or feature requests in our [issue tracker](https://github.com/CheshtaK/bookface/issues).
+Please file specific issues, bugs, or feature requests in our [issue tracker](https://github.com/CheshtaK/bookface/issues). Follow the
+issue template provided while creating a new issue.
 
 ## Contributing
 
