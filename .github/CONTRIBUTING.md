@@ -9,13 +9,31 @@ development environment on a new machine, make sure you've updated your fork.
 * If you’d like to create a new issue, please go through our issue list first (open as well as closed) and make sure the issues you are reporting do not replicate the existing issues. 
 * Follow the Issue and PR Templates provided.
 
+## Configure remotes
+When a repository is cloned, it has a default remote called `origin` that points to your fork on GitHub, not the original repository it was forked from. To keep track of the original repository, you should add another remote named `upstream`:
+
+1. Set the `upstream`:
+
+   `git remote add upstream https://github.com/systers/powerup-android.git`
+  
+2. To update your local copy with remote changes, run the following:
+
+   `git fetch upstream`
+
+   `git rebase upstream/develop`
+
+   This will give you an exact copy of the current remote, make sure you don't have any local changes.
+
 
 ## Contributing Code
 To start working on a patch:
 
-- `git fetch upstream`
-- `git checkout upstream/master -b <name_of_your_branch>`
+- Make sure repo is up to date `git fetch upstream`
+- Create a new branch with a meaningful name `git checkout upstream/master -b <name_of_your_branch>`
 - Hack away
-- `git commit -a -m "<your informative commit message>"`
-- `git push origin <name_of_your_branch>`
-- Create a pull request
+- Add the files you changed `git add <file_name>` (avoid `git add .`)
+- Commit your changes `git commit -m "<your informative commit message>"`
+- Push to your repo `git push origin <name_of_your_branch>`
+- Go into the [Github repo](https://github.com/CheshtaK/bookface) and create a pull request
+- If you are requested to make changes, edit your commit using `git commit --amend`, push again and the pull request will edit automatically
+
