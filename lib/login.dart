@@ -1,3 +1,4 @@
+import 'package:bookface/constants/strings.dart';
 import 'package:bookface/routes/routes.dart';
 import 'package:bookface/widgets/custom_outline_button.dart';
 import 'package:flutter/material.dart';
@@ -19,18 +20,27 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("Welcome to bookface",
+              Text(Strings.welcome,
                   style: TextStyle(
                       fontSize: 30,
                       fontStyle: FontStyle.italic,
                       fontWeight: FontWeight.bold)),
               Padding(
-                padding: EdgeInsets.only(bottom: 30),
+                padding: EdgeInsets.only(bottom: 5),
+              ),
+              Text(Strings.tagline,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold)),
+              Padding(
+                padding: EdgeInsets.only(bottom: 40),
               ),
               CustomOutlineButton(
                 height: 50.0,
                 width: 300.0,
-                text: "Google Login",
+                text: Strings.google_login,
                 color: Colors.white70,
                 onPressed: () =>
                     Navigator.of(context).pushNamed(Routes.category),
@@ -41,7 +51,7 @@ class LoginPage extends StatelessWidget {
               CustomOutlineButton(
                 height: 50.0,
                 width: 300.0,
-                text: "Facebook Login",
+                text: Strings.facebook_login,
                 color: Colors.white70,
                 onPressed: () =>
                     Navigator.of(context).pushNamed(Routes.category),

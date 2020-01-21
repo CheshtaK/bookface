@@ -1,3 +1,5 @@
+import 'package:bookface/constants/images.dart';
+import 'package:bookface/constants/strings.dart';
 import 'package:flutter/material.dart';
 
 class CategoryItem {
@@ -10,25 +12,25 @@ class CategoryItem {
 
 List<CategoryItem> categoryList = [
   CategoryItem(
-      image: 'assets/art_and_music.jpg',
-      text: "Arts & Music",
+      image: Images.art_and_music,
+      text: Strings.art_and_music,
       color: Colors.transparent),
   CategoryItem(
-      image: 'assets/comic.jpg', text: "Comics", color: Colors.transparent),
+      image: Images.comic, text: Strings.comic, color: Colors.transparent),
   CategoryItem(
-      image: 'assets/computer_and_tech.jpg',
-      text: "Computers and Tech",
+      image: Images.computer_and_tech,
+      text: Strings.computer_and_tech,
       color: Colors.transparent),
   CategoryItem(
-      image: 'assets/cooking.jpg', text: "Cooking", color: Colors.transparent),
+      image: Images.cooking, text: Strings.cooking, color: Colors.transparent),
   CategoryItem(
-      image: 'assets/health_and_fitness.jpg',
-      text: "Health & Fitness",
+      image: Images.health_and_fitness,
+      text: Strings.health_and_fitness,
       color: Colors.transparent),
   CategoryItem(
-      image: 'assets/romance.jpg', text: "Romance", color: Colors.transparent),
+      image: Images.romance, text: Strings.romance, color: Colors.transparent),
   CategoryItem(
-      image: 'assets/mystery.jpg', text: "Mystery", color: Colors.transparent),
+      image: Images.mystery, text: Strings.mystery, color: Colors.transparent),
   CategoryItem(
-      image: 'assets/travel.jpg', text: "Travel", color: Colors.transparent),
+      image: Images.travel, text: Strings.travel, color: Colors.transparent),
 ];

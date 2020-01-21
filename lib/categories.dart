@@ -1,3 +1,4 @@
+import 'package:bookface/constants/strings.dart';
 import 'package:bookface/routes/routes.dart';
 import 'package:bookface/widgets/category_item.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,7 @@ class CategoryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.arrow_back_ios),
-        title: Text("Choose upto 3 categories"),
+        title: Text(Strings.choose_category),
         backgroundColor: Color(0xFF915FB5),
       ),
       body: Container(

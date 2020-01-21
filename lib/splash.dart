@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:bookface/constants/images.dart';
+import 'package:bookface/constants/strings.dart';
 import 'package:bookface/routes/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -32,10 +34,10 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              "assets/logo.png",
+              Images.app_logo,
             ),
             Text(
-              "bookface",
+              Strings.app_name,
               textDirection: TextDirection.ltr,
               style: TextStyle(
                   fontSize: 40,
