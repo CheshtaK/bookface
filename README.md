@@ -1,5 +1,10 @@
 # bookface
 
+![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
+![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
+![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/3.jpeg) &nbsp;&nbsp;
+![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/2.jpeg)
+
 ## Setting up the project
 1. Go to [the project repo](https://github.com/CheshtaK/bookface) and fork it by clicking "Fork" 
 2. If you are working on Windows, download [Git Bash for Windows](https://git-for-windows.github.io/) to get a full Unix bash with Git functionality
