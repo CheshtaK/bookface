@@ -1,6 +1,5 @@
 import 'dart:async';
-import 'package:bookface/login.dart';
-import 'package:bookface/routes/router.dart';
+import 'package:bookface/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -32,7 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Image.asset("assets/logo.png", ),
+            Image.asset(
+              "assets/logo.png",
+            ),
             Text(
               "bookface",
               textDirection: TextDirection.ltr,

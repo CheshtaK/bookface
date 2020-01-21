@@ -1,20 +1,9 @@
-import 'package:bookface/login.dart';
-import 'package:bookface/main.dart';
-import 'package:bookface/routes/router.dart';
-import 'package:bookface/splash.dart';
-import "package:flutter/material.dart";
+class Routes {
+  Routes._();
 
-class Router {
-  static Route<dynamic> generateRoute(RouteSettings routesettings) {
-    switch (routesettings.name) {
-      case Routes.main:
-        return MaterialPageRoute(builder: (_) => MyApp());
-      case Routes.splash:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
-      case Routes.login:
-        return MaterialPageRoute(builder: (_) => LoginPage());
-      default:
-        return MaterialPageRoute(builder: (_) => LoginPage());
-    }
-  }
+  static const String main = '/main';
+  static const String splash = '/splash';
+  static const String login = '/login';
+  static const String category = '/category';
+  static const String home = '/home';
 }

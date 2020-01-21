@@ -1,8 +1,7 @@
-import 'package:bookface/routes/routes.dart';
 import 'package:bookface/widgets/custom_outline_button.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,8 +31,6 @@ class LoginPage extends StatelessWidget {
                 width: 300.0,
                 text: "Google Login",
                 color: Colors.white70,
-                onPressed: () =>
-                    Navigator.of(context).pushNamed(Routes.category),
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 5),
@@ -43,8 +40,6 @@ class LoginPage extends StatelessWidget {
                 width: 300.0,
                 text: "Facebook Login",
                 color: Colors.white70,
-                onPressed: () =>
-                    Navigator.of(context).pushNamed(Routes.category),
               ),
             ],
           ),
