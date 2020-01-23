@@ -61,7 +61,7 @@ List<Widget> _loadCategories() {
 Card getStructuredGridCell(CategoryItem item) {
   return Card(
     elevation: 2.0,
-    color: item.color,
+    color: Colors.transparent,
     child: InkWell(
       highlightColor: Colors.white.withAlpha(30),
       splashColor: Colors.white.withAlpha(20),

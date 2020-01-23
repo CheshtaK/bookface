@@ -1,36 +1,20 @@
 import 'package:bookface/constants/images.dart';
 import 'package:bookface/constants/strings.dart';
-import 'package:flutter/material.dart';
 
 class CategoryItem {
-  String image;
-  String text;
-  Color color;
+  final String image;
+  final String text;
 
-  CategoryItem({this.image, this.text, this.color});
+  const CategoryItem(this.image, this.text);
 }
 
-List<CategoryItem> categoryList = [
-  CategoryItem(
-      image: Images.art_and_music,
-      text: Strings.art_and_music,
-      color: Colors.transparent),
-  CategoryItem(
-      image: Images.comic, text: Strings.comic, color: Colors.transparent),
-  CategoryItem(
-      image: Images.computer_and_tech,
-      text: Strings.computer_and_tech,
-      color: Colors.transparent),
-  CategoryItem(
-      image: Images.cooking, text: Strings.cooking, color: Colors.transparent),
-  CategoryItem(
-      image: Images.health_and_fitness,
-      text: Strings.health_and_fitness,
-      color: Colors.transparent),
-  CategoryItem(
-      image: Images.romance, text: Strings.romance, color: Colors.transparent),
-  CategoryItem(
-      image: Images.mystery, text: Strings.mystery, color: Colors.transparent),
-  CategoryItem(
-      image: Images.travel, text: Strings.travel, color: Colors.transparent),
+const List<CategoryItem> categoryList = <CategoryItem>[
+  CategoryItem(Images.art_and_music, Strings.art_and_music),
+  CategoryItem(Images.comic, Strings.comic),
+  CategoryItem(Images.computer_and_tech, Strings.computer_and_tech),
+  CategoryItem(Images.cooking, Strings.cooking),
+  CategoryItem(Images.health_and_fitness, Strings.health_and_fitness),
+  CategoryItem(Images.romance, Strings.romance),
+  CategoryItem(Images.mystery, Strings.mystery),
+  CategoryItem(Images.travel, Strings.travel),
 ];
