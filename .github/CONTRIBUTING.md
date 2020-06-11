@@ -35,6 +35,6 @@ To start working on a patch:
 - Add the files you changed `git add <file_name>` (avoid `git add .`)
 - Commit your changes `git commit -m "<your informative commit message>"`
 - Push to your repo `git push origin <name_of_your_branch>`
-- Go into the [Github repo](https://github.com/CheshtaK/bookface) and create a pull request
+- Go into the [Github repo](https://github.com/CheshtaK/bookface) and create a pull request against the `SCI-2020` branch
 - If you are requested to make changes, edit your commit using `git commit --amend`, push again and the pull request will edit automatically
 
