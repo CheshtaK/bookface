@@ -7,6 +7,11 @@ requestInfoReplyComment: >
   [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md) for PRs and 
   [issue guide](https://github.com/CheshtaK/bookface/tree/master/.github/ISSUE_TEMPLATE) for issues.
 
+# *OPTIONAL* default titles to check against for lack of descriptiveness
+# MUST BE ALL LOWERCASE
+requestInfoDefaultTitles:
+  - update readme.md
+  - updates
 
 # *OPTIONAL* Label to be added to Issues and Pull Requests with insufficient information given
 requestInfoLabelToAdd: needs-more-info
