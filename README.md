@@ -7,7 +7,6 @@
 
 _Do You, uh, Book?_
 
-
 ### App Screens
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
@@ -30,4 +29,11 @@ issue template provided while creating a new issue.
 
 If you wish to contribute a change to any of the existing plugins in this repo, please review our [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md), and send a [pull request](https://github.com/CheshtaK/bookface/pulls).
 
+## Note
 
+<img src="https://user-images.githubusercontent.com/32400008/84588235-49a7d880-ae43-11ea-9506-e3d5de5d3d03.jpg"
+  width="120"
+  height="120"
+  style="float:left;">
+  
+All contributions to the project would be made under the Student Code-In program.
