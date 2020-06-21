@@ -73,10 +73,27 @@ Card getStructuredGridCell(CategoryItem item) {
             fit: BoxFit.fitWidth,
           ),
         ),
-        child: Text(
-          item.text,
-          style: TextStyle(
-              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+        child: Stack(
+          children: <Widget>[
+            Text(
+              item.text,
+              style: TextStyle(
+                fontSize: 20,
+                foreground: Paint()
+                  ..style = PaintingStyle.stroke
+                  ..strokeWidth = 2
+                  ..color = Colors.white,
+              ),
+            ),
+            // Solid text as fill.
+            Text(
+              item.text,
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+              ),
+            ),
+          ],
         ),
       ),
       onTap: () {},
