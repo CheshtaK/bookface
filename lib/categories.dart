@@ -3,7 +3,13 @@ import 'package:bookface/routes/routes.dart';
 import 'package:bookface/widgets/category_item.dart';
 import 'package:flutter/material.dart';
 
-class CategoryPage extends StatelessWidget {
+class CategoryPage extends StatefulWidget {
+  @override
+  _CategoryPageState createState() => _CategoryPageState();
+}
+
+class _CategoryPageState extends State<CategoryPage> {
+  List<bool> _isselected = new List<bool>.filled(20, false, growable: false);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,58 +51,87 @@ class CategoryPage extends StatelessWidget {
       ),
     );
   }
-}
 
-List<Widget> _loadCategories() {
-  List<Widget> categoryCells = [];
-  List<CategoryItem> categories = categoryList;
+  List<Widget> _loadCategories() {
+    List<Widget> categoryCells = [];
+    List<CategoryItem> categories = categoryList;
+    int i = 0;
+    for (CategoryItem category in categories) {
+      categoryCells.add(getStructuredGridCell(category, i));
+      i++;
+    }
 
-  for (CategoryItem category in categories) {
-    categoryCells.add(getStructuredGridCell(category));
+    return categoryCells;
   }
 
-  return categoryCells;
-}
-
-Card getStructuredGridCell(CategoryItem item) {
-  return Card(
-    elevation: 2.0,
-    color: Colors.transparent,
-    child: InkWell(
-      highlightColor: Colors.white.withAlpha(30),
-      splashColor: Colors.white.withAlpha(20),
-      child: Container(
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(item.image),
-            fit: BoxFit.fitWidth,
+  Card getStructuredGridCell(CategoryItem item, int i) {
+    return Card(
+      elevation: 2.0,
+      color: Colors.transparent,
+      child: InkWell(
+        highlightColor: Colors.white.withAlpha(30),
+        splashColor: Colors.white.withAlpha(20),
+        child: Container(
+          constraints: new BoxConstraints.expand(
+            height: 791.0,
+            width: 400.0,
+          ),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(item.image),
+              fit: BoxFit.fitWidth,
+            ),
+          ),
+          child: Stack(
+            children: <Widget>[
+              new Positioned(
+                child: Center(
+                  child: Text(
+                    item.text,
+                    style: TextStyle(
+                      fontSize: 20,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 2
+                        ..color = Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              // Solid text as fill.
+              new Positioned(
+                child: Center(
+                  child: Text(
+                    item.text,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              new Positioned(
+                top: 0.0,
+                right: 0.0,
+                child: Icon(
+                  _isselected[i] ? Icons.favorite : Icons.favorite_border,
+                  color: _isselected[i] ? Colors.red : Colors.yellow,
+                ),
+              ),
+            ],
           ),
         ),
-        child: Stack(
-          children: <Widget>[
-            Text(
-              item.text,
-              style: TextStyle(
-                fontSize: 20,
-                foreground: Paint()
-                  ..style = PaintingStyle.stroke
-                  ..strokeWidth = 2
-                  ..color = Colors.white,
-              ),
-            ),
-            // Solid text as fill.
-            Text(
-              item.text,
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.black,
-              ),
-            ),
-          ],
-        ),
+        onTap: () {
+          setState(() {
+            if (!_isselected[i]) {
+              _isselected[i] = true;
+            } else {
+              _isselected[i] = false;
+            }
+          });
+        },
       ),
-      onTap: () {},
-    ),
-  );
+    );
+  }
 }
