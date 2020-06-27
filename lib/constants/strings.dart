@@ -7,8 +7,8 @@ class Strings {
 
   //login
   static const String welcome = 'Welcome to bookface';
-  static const String google_login = 'Google Login';
-  static const String facebook_login = 'Facebook Login';
+  static const String google_login = 'Sign in with Google';
+  static const String facebook_login = 'Sign in with Facebook';
 
   //categories
   static const String choose_category = 'Choose upto 3 categories';

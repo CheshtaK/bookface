@@ -2,6 +2,8 @@ import 'package:bookface/constants/strings.dart';
 import 'package:bookface/routes/routes.dart';
 import 'package:bookface/widgets/custom_outline_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_signin_button/button_list.dart';
+import 'package:flutter_signin_button/button_view.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 final GoogleSignIn googleUser = GoogleSignIn();
@@ -12,7 +14,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  
   /* This boolean accounts for the state if a user has been logged in or not, might come in handy later while conditionally rendering something in the future. */
   bool isSignedIn = false;
 
@@ -29,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
     }, onError: (loginError) {
       print("GOOGLE LOGIN ERROR : " + loginError.toString());
     });
-    
+
     /*
 
       THIS BELOW METHOD WILL CHECK IF A USER HAS ALREADY BEEN LOGGED IN TO THE APP BEFORE, AND AUTOMATICALLY SKIP THE LOGIN SCREEN.
@@ -59,7 +60,6 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,45 +74,46 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(Strings.welcome,
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold)),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5),
-              ),
-              Text(Strings.tagline,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold)),
-              Padding(
-                padding: EdgeInsets.only(bottom: 40),
-              ),
-              CustomOutlineButton(
-                height: 50.0,
-                width: 300.0,
-                text: Strings.google_login,
-                color: Colors.white70,
-                onPressed: () => googleUser.signIn(),
-              ),
-              Padding(
-                padding: EdgeInsets.only(bottom: 5),
-              ),
-              CustomOutlineButton(
-                height: 50.0,
-                width: 300.0,
-                text: Strings.facebook_login,
-                color: Colors.white70,
-                onPressed: () =>
-                    Navigator.of(context).pushNamed(Routes.category),
-              ),
-            ],
-          ),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(Strings.welcome,
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold)),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 5),
+                ),
+                Text(Strings.tagline,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.bold)),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 40),
+                ),
+                SignInButton(
+                  Buttons.Google,
+                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 24),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  text: Strings.google_login,
+                  onPressed: () => googleUser.signIn(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 5),
+                ),
+                SignInButton(
+                  Buttons.Facebook,
+                  padding: EdgeInsets.symmetric(vertical: 12.5, horizontal: 24),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  text: Strings.facebook_login,
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed(Routes.category),
+                ),
+              ]),
         ),
       ),
     );
