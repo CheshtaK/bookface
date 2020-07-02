@@ -37,7 +37,7 @@ If you wish to contribute a change to any of the existing plugins in this repo, 
 
 <b>Bookface has been selected for [Student Code-In](https://scodein.tech/)</b>
 
-> Only SCI participants are allowed to contribute to this repository.
+> Only SCI participants are allowed to contribute to issues marked with the `SCI-2020` label.
 
 <img src="https://user-images.githubusercontent.com/32400008/84588235-49a7d880-ae43-11ea-9506-e3d5de5d3d03.jpg"
   width="120"
