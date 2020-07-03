@@ -12,6 +12,9 @@ class Images {
   static const String light2 = 'assets/Light_2.png';
   static const String plant = 'assets/Plant.png';
 
+  // Login Screen
+  static const String loginHero = 'assets/images/login-hero.png';
+
   //categories
   static const String art_and_music = 'assets/art_and_music.jpg';
   static const String comic = 'assets/comic.jpg';

@@ -1,10 +1,12 @@
 import 'package:bookface/constants/strings.dart';
 import 'package:bookface/routes/routes.dart';
-import 'package:bookface/widgets/custom_outline_button.dart';
+import 'package:bookface/widgets/login_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/button_list.dart';
-import 'package:flutter_signin_button/button_view.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+
+import 'constants/images.dart';
+import 'splash.dart';
 
 final GoogleSignIn googleUser = GoogleSignIn();
 
@@ -63,58 +65,115 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [const Color(0xFF915FB5), const Color(0xFFCA436B)],
-              begin: FractionalOffset.topLeft,
-              end: FractionalOffset.bottomRight,
-              stops: [0.0, 1.0],
-              tileMode: TileMode.clamp),
-        ),
-        child: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(Strings.welcome,
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold)),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 5),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          /*
+
+          @abhinavsri360 actually did a pretty good job in implementing,
+          the FadeIn Animation widget in the splash screen, I've imported the same Widget here
+          for now.
+
+          It might be good if that function can be separated into helpers or widget in
+          the later future.
+
+
+          This First Flexible Widget Contains The Hero Image
+          For The Login Screen, which can be found/changed at
+          
+          assets/images/login-hero.png      
+          */
+
+          Flexible(
+            child: FadeIn(
+              1.0,
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(Images.loginHero),
+                    fit: BoxFit.fitWidth,
+                    alignment: Alignment.topLeft,
+                  ),
                 ),
-                Text(Strings.tagline,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.bold)),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 40),
-                ),
-                SignInButton(
-                  Buttons.Google,
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 24),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                  text: Strings.google_login,
-                  onPressed: () => googleUser.signIn(),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 5),
-                ),
-                SignInButton(
-                  Buttons.Facebook,
-                  padding: EdgeInsets.symmetric(vertical: 12.5, horizontal: 24),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                  text: Strings.facebook_login,
-                  onPressed: () =>
-                      Navigator.of(context).pushNamed(Routes.category),
-                ),
-              ]),
-        ),
+              ),
+            ),
+          ),
+
+          /*
+          This Second Flexible Widget Contains The Hero Text
+          And The Different Login Buttons      
+          */
+
+          Flexible(
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  FadeIn(
+                    1.25,
+                    Container(
+                      alignment: Alignment.centerLeft,
+                      padding: EdgeInsets.only(left: 30),
+                      child: Text(
+                        Strings.loginHero,
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xffDB665E),
+                            fontSize: 42),
+                      ),
+                    ),
+                  ),
+                  FadeIn(
+                    1.5,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 40),
+                        ),
+                        LoginButton(
+                          onPress: () => googleUser.signIn(),
+                          accentColor: Color(0xffc03a2b),
+                          icon: FontAwesomeIcons.google,
+                          text: Strings.google_login,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 5),
+                        ),
+                        Text(
+                          'or',
+                          style: TextStyle(
+                              color: Colors.grey[600],
+                              fontFamily: 'Poppins',
+                              fontSize: 14),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 5),
+                        ),
+                        LoginButton(
+                          onPress: () =>
+                              Navigator.of(context).pushNamed(Routes.category),
+                          accentColor: Color(0xff005f9a),
+                          icon: FontAwesomeIcons.facebookF,
+                          text: Strings.facebook_login,
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
