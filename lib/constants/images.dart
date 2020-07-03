@@ -4,6 +4,14 @@ class Images {
   //general
   static const String app_logo = 'assets/logo.png';
 
+  //splashscreen
+  static const String bubble = 'assets/Bubble.png';
+  static const String clock = 'assets/Clock.png';
+  static const String lamp = 'assets/Lamp.png';
+  static const String light1 = 'assets/Light_1.png';
+  static const String light2 = 'assets/Light_2.png';
+  static const String plant = 'assets/Plant.png';
+
   //categories
   static const String art_and_music = 'assets/art_and_music.jpg';
   static const String comic = 'assets/comic.jpg';

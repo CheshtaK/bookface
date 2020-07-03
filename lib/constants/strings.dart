@@ -2,11 +2,11 @@ class Strings {
   Strings._();
 
   //general
-  static const String app_name = 'bookface';
+  static const String app_name = 'Bookface';
   static const String tagline = 'Do You, uh, Book?';
 
   //login
-  static const String welcome = 'Welcome to bookface';
+  static const String welcome = 'Welcome to Bookface';
   static const String google_login = 'Sign in with Google';
   static const String facebook_login = 'Sign in with Facebook';
 
