@@ -16,6 +16,8 @@ These are few simple guidelines to keep in mind while designing user interfaces 
 > Facebook Login Button : #005F9A
 >
 > Google Sign In Button : #C0392B
+>
+> Profile Accent Color : #F68FA5 (0.65 opacity)
 > ```
 
 All the assets for the project can be found in the [DESIGN](./DESIGN/) folder.
@@ -35,7 +37,7 @@ All the assets for the project can be found in the [DESIGN](./DESIGN/) folder.
 
 ##### 📸 Mockups
 
-<img src="DESIGN\mockups\splash.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\login.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\Categories.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\home.png" height="350em">
+<img src="DESIGN\mockups\splash.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\login.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\Categories.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\home.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\Profile Grid View.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\Settings.png" height="350em">&nbsp;&nbsp;<img src="DESIGN\mockups\Profile ListView – Liked Post.png" height="350em">
 
 #### 🗒 Notes
 
