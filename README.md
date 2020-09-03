@@ -11,6 +11,20 @@ _Do You, uh, Book?_
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/CheshtaK/bookface/pulls)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/CheshtaK/bookface/blob/SCI-2020/LICENSE)
 
+
+Table of contents
+=================
+
+<!--ts-->
+   * [App Screens](#app-screens)
+   * [Setting up the Project](#setting-up-the-project)
+   * [Issues](#issues)
+   * [Contributing](#contributing)
+   * [Important Notice](#important-notice)
+   * [About SCI](#about-sci)
+<!--te-->
+
+
 ### App Screens
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
