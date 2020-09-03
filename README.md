@@ -20,12 +20,10 @@ Table of contents
    * [Setting up the Project](#setting-up-the-project)
    * [Issues](#issues)
    * [Contributing](#contributing)
-   * [Important Notice](#important-notice)
-   * [About SCI](#about-sci)
 <!--te-->
 
 
-### App Screens
+## App Screens
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/1.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/4.jpeg) &nbsp;&nbsp;
 ![alt-text](https://github.com/CheshtaK/bookface/blob/master/screenshots/3.jpeg) &nbsp;&nbsp;
@@ -46,16 +44,3 @@ issue template provided while creating a new issue.
 ## Contributing
 
 If you wish to contribute a change to any of the existing plugins in this repo, please review our [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md), and send a [pull request](https://github.com/CheshtaK/bookface/pulls).
-
-## Important Notice
-
-<b>Bookface has been selected for [Student Code-In](https://scodein.tech/)</b>
-
-> Only SCI participants are allowed to contribute to issues marked with the `SCI-2020` label.
-
-<img src="https://user-images.githubusercontent.com/32400008/84588235-49a7d880-ae43-11ea-9506-e3d5de5d3d03.jpg"
-  width="120"
-  height="120">
-  
-### About SCI
-Student Code-in is a global program that helps students grow with Open Source. It is a 2 month long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of Open Source Projects. In this, all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team.
