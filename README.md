@@ -20,6 +20,7 @@ Table of contents
    * [Setting up the Project](#setting-up-the-project)
    * [Issues](#issues)
    * [Contributing](#contributing)
+   * [License](#license)
 <!--te-->
 
 
@@ -44,3 +45,7 @@ issue template provided while creating a new issue.
 ## Contributing
 
 If you wish to contribute a change to any of the existing plugins in this repo, please review our [contribution guide](https://github.com/CheshtaK/bookface/blob/master/.github/CONTRIBUTING.md), and send a [pull request](https://github.com/CheshtaK/bookface/pulls).
+
+## License
+Distributed under the GPL-3.0 License . See `LICENSE` for more information.
+
